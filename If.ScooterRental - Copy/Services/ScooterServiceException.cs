@@ -8,7 +8,7 @@ namespace If.ScooterRental.Services
 	/// Scooter service specific exception.
 	/// </summary>
 	[Serializable]
-	public class ScooterServiceException : Exception
+	class ScooterServiceException : Exception
     {
 		public ScooterServiceException()
 			: base()

@@ -7,7 +7,7 @@ namespace If.ScooterRental
 	/// Rental company specific exception.
 	/// </summary>
 	[Serializable]
-	public class RentalCompanyException : Exception
+	class RentalCompanyException : Exception
 	{
 		public RentalCompanyException()
 			: base()
