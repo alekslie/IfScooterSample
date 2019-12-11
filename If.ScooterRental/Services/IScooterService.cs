@@ -31,5 +31,12 @@ namespace If.ScooterRental.Services
         /// <param name="scooterId">Unique ID of the scooter.</param> 
         /// <returns>Return a particular scooter.</returns> 
         Scooter GetScooterById(string scooterId);
+
+        /// <summary>
+        /// Sets scooter rental status.
+        /// </summary>
+        /// <param name="scooterId">Unique ID of the scooter</param> 
+        /// <param name="isRented">Value of the status.</param>
+        void SetRentalStatus(string scooterId, bool isRented);
     }
 }

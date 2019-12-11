@@ -9,7 +9,7 @@ namespace If.ScooterRental.Services
     /// <summary>
     /// Implements scooter service.
     /// </summary>
-    public class ScooterService : IScooterService, IScooterServiceExtended
+    public class ScooterService : IScooterService
     {
         private readonly ILogger<ScooterService> _logger;
         private readonly Dictionary<string, Scooter> _scooterRepository = new Dictionary<string, Scooter>();

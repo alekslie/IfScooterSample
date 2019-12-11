@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xunit;
 
-namespace If.ScooterRental.Tests.Services
+namespace If.ScooterRental.Tests
 {
     public class AddScooterWrongArgData : TheoryData<string, string, decimal>
     {
@@ -49,6 +49,8 @@ namespace If.ScooterRental.Tests.Services
         }
     }
 
+
+
     public class GetScooterWhenExistsData : TheoryData<string, decimal>
     {
         public GetScooterWhenExistsData()
@@ -86,16 +88,6 @@ namespace If.ScooterRental.Tests.Services
             _scooters.Add("get03_abc007", 0.05M);
             _scooters.Add("get03_abc008", 0.05M);
         }
-        public Dictionary<string, decimal> Scooters {  get { return _scooters; } }
-    }
-
-    public class SetRentalScooterWrongArgData : TheoryData<string, string>
-    {
-        public SetRentalScooterWrongArgData()
-        {
-            Add("scooterId", "");
-            Add("scooterId", null);
-            Add("scooterId", "455");
-        }
+        public Dictionary<string, decimal> Scooters { get { return _scooters; } }
     }
 }
