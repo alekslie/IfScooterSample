@@ -38,6 +38,19 @@ namespace If.ScooterRental.Tests.Services
         }
     }
 
+    public class RemoveGetScooterWrongArgData : TheoryData<string, string>
+    {
+        public RemoveGetScooterWrongArgData()
+        {
+            Add("scooterId", "");
+            Add("scooterId", null);
+            Add("scooterId", "455");
+            Add("scooterId", "    ");
+        }
+    }
+
+
+
     public class GetScooterWhenExistsData : TheoryData<string, decimal>
     {
         public GetScooterWhenExistsData()
